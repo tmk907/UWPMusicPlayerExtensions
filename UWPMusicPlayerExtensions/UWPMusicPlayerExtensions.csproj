@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48b63867-55dc-4c74-8438-38d62d03c9c2}</ProjectGuid>
+    <ProjectGuid>{48B63867-55DC-4C74-8438-38D62D03C9C2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UWPMusicPlayerExtensions</RootNamespace>
@@ -102,17 +102,38 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
-
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="project.json" />
   </ItemGroup>
-
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AppExtensionInfo.cs" />
+    <Compile Include="Enums\ExtensionType.cs" />
+    <Compile Include="Client\AlbumInfoExtensionsClient.cs" />
+    <Compile Include="Client\ArtistInfoExtensionsClient.cs" />
+    <Compile Include="Client\LyricsExtensionsClient.cs" />
+    <Compile Include="ExtensionsNames.cs" />
+    <Compile Include="Client\ExtensionClientHelper.cs" />
+    <Compile Include="Client\IExtensionClientHelper.cs" />
+    <Compile Include="Service\AlbumInfoExtensionService.cs" />
+    <Compile Include="Service\ArtistInfoExtensionService.cs" />
+    <Compile Include="Service\IExtensionsService.cs" />
+    <Compile Include="Messages\AlbumInfoResponse.cs" />
+    <Compile Include="Messages\ArtistInfoRequest.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="Messages\LyricsRequest.cs" />
+    <Compile Include="Messages\AlbumInfoRequest.cs" />
+    <Compile Include="Messages\ArtistInfoResponse.cs" />
+    <Compile Include="Messages\LyricsResponse.cs" />
+    <Compile Include="Messages\TrackInfoRequest.cs" />
+    <Compile Include="Messages\TrackInfoResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="ResponseStatus.cs" />
+    <Compile Include="Service\LyricsExtensionService.cs" />
     <EmbeddedResource Include="Properties\UWPMusicPlayerExtensions.rd.xml" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
