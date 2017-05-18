@@ -1,6 +1,6 @@
 ﻿using UWPMusicPlayerExtensions.Enums;
 
-namespace UWPMusicPlayerExtensions
+namespace UWPMusicPlayerExtensions.Client
 {
     public class ExtensionsNames
     {
@@ -10,17 +10,17 @@ namespace UWPMusicPlayerExtensions
         public static readonly string TrackInfo = "uwp.music-player.trackinfo";
         public static readonly string Unknown = "uwp.music-player.unknown";
 
-        public static string GetName(ExtensionTypes type)
+        public static string GetName(MusicPlayerExtensionTypes type)
         {
             switch (type)
             {
-                case ExtensionTypes.AlbumInfo:
+                case MusicPlayerExtensionTypes.AlbumInfo:
                     return AlbumInfo;
-                case ExtensionTypes.ArtistInfo:
+                case MusicPlayerExtensionTypes.ArtistInfo:
                     return ArtistInfo;
-                case ExtensionTypes.Lyrics:
+                case MusicPlayerExtensionTypes.Lyrics:
                     return Lyrics;
-                case ExtensionTypes.TrackInfo:
+                case MusicPlayerExtensionTypes.TrackInfo:
                     return TrackInfo;
                 default:
                     return Unknown;

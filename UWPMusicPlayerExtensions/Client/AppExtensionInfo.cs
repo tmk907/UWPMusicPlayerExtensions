@@ -1,6 +1,6 @@
 ﻿using UWPMusicPlayerExtensions.Enums;
 
-namespace UWPMusicPlayerExtensions
+namespace UWPMusicPlayerExtensions.Client
 {
     public class AppExtensionInfo
     {
@@ -8,6 +8,6 @@ namespace UWPMusicPlayerExtensions
         public string Id { get; set; }
         public string ServiceName { get; set; }
         public string PackageName { get; set; }
-        public ExtensionTypes Type { get; set; }
+        public MusicPlayerExtensionTypes Type { get; set; }
     }
 }

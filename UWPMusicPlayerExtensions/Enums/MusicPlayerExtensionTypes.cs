@@ -1,6 +1,6 @@
 ﻿namespace UWPMusicPlayerExtensions.Enums
 {
-    public enum ExtensionTypes
+    public enum MusicPlayerExtensionTypes
     {
         Lyrics,
         AlbumInfo,

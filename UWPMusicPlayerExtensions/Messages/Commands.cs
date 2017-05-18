@@ -1,4 +1,4 @@
-﻿namespace UWPMusicPlayerExtensions
+﻿namespace UWPMusicPlayerExtensions.Messages
 {
     public class Commands
     {

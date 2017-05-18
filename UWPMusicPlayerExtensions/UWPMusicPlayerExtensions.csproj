@@ -107,14 +107,14 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppExtensionInfo.cs" />
-    <Compile Include="AvailableExtension.cs" />
-    <Compile Include="AvailableExtensionsHelper.cs" />
-    <Compile Include="Enums\ExtensionType.cs" />
+    <Compile Include="Client\AppExtensionInfo.cs" />
+    <Compile Include="Store\AvailableExtension.cs" />
+    <Compile Include="Store\AvailableExtensionsHelper.cs" />
+    <Compile Include="Enums\MusicPlayerExtensionTypes.cs" />
     <Compile Include="Client\AlbumInfoExtensionsClient.cs" />
     <Compile Include="Client\ArtistInfoExtensionsClient.cs" />
     <Compile Include="Client\LyricsExtensionsClient.cs" />
-    <Compile Include="ExtensionsNames.cs" />
+    <Compile Include="Client\ExtensionsNames.cs" />
     <Compile Include="Client\ExtensionClientHelper.cs" />
     <Compile Include="Client\IExtensionClientHelper.cs" />
     <Compile Include="Service\AlbumInfoExtensionService.cs" />
@@ -122,7 +122,7 @@
     <Compile Include="Service\IExtensionsService.cs" />
     <Compile Include="Messages\AlbumInfoResponse.cs" />
     <Compile Include="Messages\ArtistInfoRequest.cs" />
-    <Compile Include="Commands.cs" />
+    <Compile Include="Messages\Commands.cs" />
     <Compile Include="Messages\LyricsRequest.cs" />
     <Compile Include="Messages\AlbumInfoRequest.cs" />
     <Compile Include="Messages\ArtistInfoResponse.cs" />
@@ -130,8 +130,8 @@
     <Compile Include="Messages\TrackInfoRequest.cs" />
     <Compile Include="Messages\TrackInfoResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Response.cs" />
-    <Compile Include="ResponseStatus.cs" />
+    <Compile Include="Messages\Response.cs" />
+    <Compile Include="Messages\ResponseStatus.cs" />
     <Compile Include="Service\LyricsExtensionService.cs" />
     <EmbeddedResource Include="Properties\UWPMusicPlayerExtensions.rd.xml" />
   </ItemGroup>

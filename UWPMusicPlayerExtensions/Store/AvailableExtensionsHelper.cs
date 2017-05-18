@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Windows.Web.Http;
 
-namespace UWPMusicPlayerExtensions
+namespace UWPMusicPlayerExtensions.Store
 {
     public class AvailableExtensionsHelper
     {

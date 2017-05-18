@@ -1,8 +1,9 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 using System.Collections.Generic;
 using UWPMusicPlayerExtensions.Enums;
 
-namespace UWPMusicPlayerExtensions
+namespace UWPMusicPlayerExtensions.Store
 {
     public class AvailableExtension
     {
@@ -13,7 +14,8 @@ namespace UWPMusicPlayerExtensions
         [JsonProperty("storeid")]
         public string StoreId { get; set; }
         [JsonProperty("type")]
-        public ExtensionTypes Type { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public MusicPlayerExtensionTypes Type { get; set; }
     }
 
     public class AvailableExtensions

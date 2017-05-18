@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UWPMusicPlayerExtensions.Enums;
+using UWPMusicPlayerExtensions.Messages;
 using Windows.ApplicationModel.AppExtensions;
 using Windows.ApplicationModel.AppService;
 using Windows.Foundation.Collections;
@@ -10,12 +11,12 @@ namespace UWPMusicPlayerExtensions.Client
 {
     public class ExtensionClientHelper : IExtensionClientHelper
     {
-        private ExtensionTypes extensionType;
+        private MusicPlayerExtensionTypes extensionType;
         private string appExtensionName;
         private AppExtensionCatalog catalog;
         private List<AppExtensionInfo> extensions;
 
-        public ExtensionClientHelper(ExtensionTypes extensionType)
+        public ExtensionClientHelper(MusicPlayerExtensionTypes extensionType)
         {
             this.extensionType = extensionType;
             appExtensionName = ExtensionsNames.GetName(extensionType);
