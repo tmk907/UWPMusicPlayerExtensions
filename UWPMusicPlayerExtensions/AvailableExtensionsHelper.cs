@@ -10,10 +10,10 @@ namespace UWPMusicPlayerExtensions
     {
         public AvailableExtensionsHelper()
         {
-            uri = new Uri(@"https://raw.githubusercontent.com/tmk907/UWPMusicPlayerExtensions/extensions/AvailableExtensions.json");
+            ExtensionsListUri = new Uri(@"https://raw.githubusercontent.com/tmk907/UWPMusicPlayerExtensions/extensions/AvailableExtensions.json");
         }
 
-        public Uri uri { get; private set; }
+        public Uri ExtensionsListUri { get; private set; }
 
         public async Task<List<AvailableExtension>> GetAvailableExtensions()
         {
@@ -23,7 +23,7 @@ namespace UWPMusicPlayerExtensions
             {
                 try
                 {
-                    var response = await client.GetStringAsync(uri);
+                    var response = await client.GetStringAsync(ExtensionsListUri);
                     extensions = JsonConvert.DeserializeObject<AvailableExtensions>(response).Extensions;
                 }
                 catch (Exception ex)
