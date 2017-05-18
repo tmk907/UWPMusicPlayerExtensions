@@ -24,7 +24,7 @@ namespace UWPMusicPlayerExtensions.Client
 
         public async Task<ArtistInfoResponse> SendRequestAsync(ArtistInfoRequest request, CancellationToken token)
         {
-            var availableExtensions = await extensionHelper.GetAvailableExtensions();
+            var availableExtensions = await extensionHelper.GetInstalledExtensions();
             token.ThrowIfCancellationRequested();
             var response = await SendRequestAsync(request, availableExtensions, token);
             return response;

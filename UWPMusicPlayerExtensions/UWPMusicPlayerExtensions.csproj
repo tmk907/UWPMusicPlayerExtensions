@@ -108,6 +108,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppExtensionInfo.cs" />
+    <Compile Include="AvailableExtension.cs" />
+    <Compile Include="AvailableExtensionsHelper.cs" />
     <Compile Include="Enums\ExtensionType.cs" />
     <Compile Include="Client\AlbumInfoExtensionsClient.cs" />
     <Compile Include="Client\ArtistInfoExtensionsClient.cs" />

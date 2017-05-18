@@ -34,7 +34,7 @@ namespace UWPMusicPlayerExtensions.Client
             extensions = null;
         }
 
-        public async Task<List<AppExtensionInfo>> GetAvailableExtensions()
+        public async Task<List<AppExtensionInfo>> GetInstalledExtensions()
         {
             if (extensions == null)
             {
