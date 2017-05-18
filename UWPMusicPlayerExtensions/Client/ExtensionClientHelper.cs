@@ -47,12 +47,18 @@ namespace UWPMusicPlayerExtensions.Client
                     if (properties != null && properties.ContainsKey("Service"))
                     {
                         PropertySet service = properties["Service"] as PropertySet;
+                        string storeId = "";
+                        if (properties.ContainsKey("StoreId"))
+                        {
+                            storeId = (properties["StoreId"] as PropertySet)["#text"].ToString();
+                        }
                         extensions.Add(new AppExtensionInfo()
                         {
                             DisplayName = extension.DisplayName,
                             Id = extension.Id,
                             PackageName = extension.Package.Id.FamilyName,
                             ServiceName = service["#text"].ToString(),
+                            StoreId = storeId,
                             Type = extensionType,
                         });
                     }
