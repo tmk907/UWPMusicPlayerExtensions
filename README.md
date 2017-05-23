@@ -1,10 +1,13 @@
 # UWPMusicPlayerExtensions
 
-Example
+This library helps you create and use extensions for music players.  
+This repository also stores information about extensions, which use this library.
+
+## Example
 
 Music player uses extension to get lyrics for currently playing song.
 
-Music player code 
+### Music player code 
 
 Package.appxmanifest
 ```xaml
@@ -32,7 +35,7 @@ public async Task<LyricsResponse> GetLyrics(string album, string artist, string 
 }
 ```
 
-Extension code 
+### Extension code 
 
 Package.appxmanifest
 ```xaml
@@ -73,4 +76,3 @@ public async Task<ValueSet> GetLyrics(ValueSet message)
 	return response;
 }
 ```		
-
