@@ -6,5 +6,7 @@
         AlbumInfo,
         ArtistInfo,
         TrackInfo,
+        NowPlaying,
+        NowPlayingNotification
     }
 }

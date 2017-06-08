@@ -4,21 +4,21 @@ using Windows.Foundation.Collections;
 
 namespace UWPMusicPlayerExtensions.Service
 {
-    public class AlbumInfoExtensionService
+    public class NowPlayingStatusExtensionService
     {
-        public AlbumInfoRequest GetRequest(ValueSet message)
+        public NowPlayingRequest GetRequest(ValueSet message)
         {
-            AlbumInfoRequest request = null;
+            NowPlayingRequest request = null;
 
-            if (message.ContainsKey(Commands.GetAlbumInfo))
+            if (message.ContainsKey(Commands.GetNowPlayingInfo))
             {
-                string data = message[Commands.GetAlbumInfo] as string;
-                request = JsonConvert.DeserializeObject<AlbumInfoRequest>(data);
+                string data = message[Commands.GetNowPlayingInfo] as string;
+                request = JsonConvert.DeserializeObject<NowPlayingRequest>(data);
             }
             return request;
         }
 
-        public ValueSet PrepareResponse(AlbumInfoResponse response)
+        public ValueSet PrepareResponse(NowPlayingResponse response)
         {
             ValueSet message = new ValueSet();
 

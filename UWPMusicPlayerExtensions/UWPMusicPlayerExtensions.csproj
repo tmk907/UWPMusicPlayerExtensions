@@ -108,6 +108,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client\AppExtensionInfo.cs" />
+    <Compile Include="Client\NowPlayingStatusExtensionsClient.cs" />
+    <Compile Include="Client\NowPlayingNotificationBroadcaster.cs" />
+    <Compile Include="Enums\PlaybackStatus.cs" />
+    <Compile Include="Messages\NowPlayingNotification.cs" />
+    <Compile Include="Messages\NowPlayingRequest.cs" />
+    <Compile Include="Messages\NowPlayingResponse.cs" />
+    <Compile Include="Service\NowPlayingNotificationExtensionReceiver.cs" />
+    <Compile Include="Service\NowPlayingStatusExtensionService.cs" />
     <Compile Include="Store\AvailableExtension.cs" />
     <Compile Include="Store\AvailableExtensionsHelper.cs" />
     <Compile Include="Enums\MusicPlayerExtensionTypes.cs" />

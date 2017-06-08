@@ -49,7 +49,7 @@ namespace UWPMusicPlayerExtensions.Client
             }
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             var data = JsonConvert.SerializeObject(request);
-            parameters.Add(Commands.GetArtistInfo, data);
+            parameters.Add(Commands.GetAlbumInfo, data);
 
             foreach (var ext in extensions)
             {
