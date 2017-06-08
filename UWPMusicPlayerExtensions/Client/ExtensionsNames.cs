@@ -7,7 +7,7 @@ namespace UWPMusicPlayerExtensions.Client
         public static readonly string AlbumInfo = "uwp.music-player.albuminfo";
         public static readonly string ArtistInfo = "uwp.music-player.artistinfo";
         public static readonly string NowPlayingSongStatus = "uwp.music-player.nowplayingsongstatus";
-        public static readonly string NowPlayingSongNotification = "uwp.music-player.nowplayingsongnotification";
+        public static readonly string NowPlayingSongNotification = "uwp.music-player.npnotification";
         public static readonly string Lyrics = "uwp.music-player.lyrics";
         public static readonly string TrackInfo = "uwp.music-player.trackinfo";
         public static readonly string Unknown = "uwp.music-player.unknown";

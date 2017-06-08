@@ -31,7 +31,7 @@ namespace UWPMusicPlayerExtensions.Client
         {
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             var data = JsonConvert.SerializeObject(request);
-            parameters.Add(Commands.GetNowPlayingInfo, data);
+            parameters.Add(Commands.NowPlayingNotification, data);
 
             foreach (var ext in extensions)
             {
